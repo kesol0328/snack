@@ -29,12 +29,12 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-def webappDir = "$projectDir/src/main/snack_frontend"
+def webappDir = "$projectDir/snack_frontend"
 
 sourceSets {
 	main {
 		resources {
-			srcDirs = ["$webappDir/build", "$projectDir/src/main/resources"]
+			srcDirs = ["$webappDir/build", "$projectDir/snack_frontend/src"]
 		}
 	}
 }
